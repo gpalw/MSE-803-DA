@@ -1,6 +1,8 @@
 ################ Data cleaning the Iris dataset #################
 from sklearn import datasets
 import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 # load iris dataset
 iris = datasets.load_iris()
@@ -33,3 +35,8 @@ print(iris_X)
 #### Feature correlation matrix
 correlation_matrix = iris_df.corr()
 print("\nFeature correlation matrix (Pearson correlation):\n", correlation_matrix)
+
+plt.figure(figsize=(8, 6))
+sns.heatmap(correlation_matrix, annot=True, cmap="coolwarm", fmt=".2f", linewidths=0.5)
+plt.title("Feature Correlation Matrix (Iris Dataset)")
+plt.show()
