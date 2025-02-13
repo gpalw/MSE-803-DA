@@ -23,3 +23,19 @@ plt.xlabel("Categories")
 plt.ylabel("Values")
 plt.title("Bar Plot")
 plt.savefig("Bar_Plot.png")
+
+
+categories = ["A", "B", "C", "D", "E"]
+vars = [7, 10, 15, 19, 25]
+plt.figure(figsize=(6, 6))
+plt.pie(
+    vars,
+    labels=categories,
+    autopct="%1.1f%%",
+    startangle=140,
+    colors=["blue", "green", "red", "purple", "orange"],
+)
+plt.xlabel("Categories")
+plt.ylabel("Values")
+plt.title("Pie Chart")
+plt.savefig("Pie Chart.png")
