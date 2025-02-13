@@ -39,3 +39,22 @@ plt.xlabel("Categories")
 plt.ylabel("Values")
 plt.title("Pie Chart")
 plt.savefig("Pie Chart.png")
+
+
+x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+y = [10, 20, 15, 25, 30, 28, 35, 40, 38, 45]
+
+plt.figure(figsize=(6, 6))
+plt.scatter(x, y, color="blue", marker="o", s=60, alpha=0.7)
+
+plt.xlabel("X Axis")
+plt.ylabel("Y Axis")
+plt.title("Basic Scatter Plot")
+plt.savefig("Scatter Plot.png")
+
+
+
+
+
+
+plt.show()
